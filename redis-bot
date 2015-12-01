@@ -1,3 +1,8 @@
+"""
+Original code by Charles Leifer
+https://github.com/coleifer/irc
+"""
+
 #!/usr/bin/python
 import random
 import re
@@ -119,8 +124,8 @@ class MarkovBot(IRCBot):
         )
 
 
-host = 'irc.freenode.net'
+host = 'irc.rizon.net'
 port = 6667
-nick = 'whatyousay'
+nick = 'Marvin[bot]'
 
-run_bot(MarkovBot, host, port, nick, ['#lawrence-botwars'])
+run_bot(MarkovBot, host, port, nick, ['#fatpeoplehate'])
