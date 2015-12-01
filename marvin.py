@@ -151,9 +151,9 @@ class MarkovBot(IRCBot):
         )
 
 
-host = 'irc.yournetwork.net'
+host = 'irc.rizon.net'
 port = 6667
-nick = 'Marvin'
+nick = 'Marvin[old]'
 
 conn = IRCConnection(host, port, nick)
 markov_bot = MarkovBot(conn)
@@ -165,7 +165,7 @@ if len(sys.argv) > 1 and sys.argv[1] == '-log':
         markov_bot.load_text_file(sys.argv[2], sys.argv[3])
 else:
     conn.connect()
-    conn.join('#yourchannel')
+    conn.join('#fatpeoplehate')
     try:
         conn.enter_event_loop()
     except:
